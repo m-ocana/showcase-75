@@ -1,49 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>Mar$ Showcase</title>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+    <!-- Semantic UI -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
 
-		<script src="js/reveal.js"></script>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/night.css" />
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="css/custom/style.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link")
+      link.rel = "stylesheet"
+      link.type = "text/css"
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css"
+      document.getElementsByTagName("head")[0].appendChild(link)
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section id="intro">
+          <h1>Mar$</h1>
+          <h3>Showcase Sprint 75</h3>
+        </section>
+        <section
+          id="whats-new"
+          data-background-image="https://media.giphy.com/media/9V3f8kt4Byz0TTye5J/giphy.gif"
+        >
+          What have we been up to?
+        </section>
+
+        <section
+          id="klarna"
+          data-background-iframe="https://www.klarna.com/uk/"
+        >
+          <section>
+            <div class="iframe-overlay">
+              <h2>Klarna Refactor Release</h2>
+              <h3 class="fragment" data-fragment-index="1">Goals</h3>
+              <p class="fragment" data-fragment-index="2">Increase Conversion</p>
+              <p class="fragment" data-fragment-index="2">Reduce Payment Friction</p>
+              <p class="fragment" data-fragment-index="2">Update API</p>
+            </div>
+          </section>
+          <section>
+            <div class="iframe-overlay">
+              <h2>Klarna Refactor Release</h2>
+              <h3>Impact</h3>
+              <p class="fragment" data-fragment-index="1">98%&#8595; Session update journey errors</p>
+              <p class="fragment" data-fragment-index="1">90%&#8595; Transaction errors</p>
+              <p class="fragment" data-fragment-index="1">&#8593; Sessions created</p>
+              <p class="fragment" data-fragment-index="1">&#8593; Klarna orders</p>
+            </div>
+          </section>
+          <section>
+            <div class="iframe-overlay">
+              <h2>All things Klarna</h2>
+              <h3>In progress</h3>
+              <p class="fragment" data-fragment-index="1">Performance and error handling improvements</p>
+              <p class="fragment" data-fragment-index="1">Introduce Klarna <i class="us flag big"></i></p>
+            </div>
+          </section>
+        </section>
+
+        <section
+          id="psd2"
+          data-background-image="https://securionpay.com/wp-content/uploads/2017/11/psd2.png"
+        >
+          <div class="iframe-overlay">
+              <h2>Payment Service Directive</h2>
+              <p class='fragment' data-fragment-index="1">Stronger Customer Authentication</p>
+              <h3 class='fragment' data-fragment-index="2">2 phases:</h3>
+              <ul class="fragment" data-fragment-index="3">
+                <li>3DS Iframe in Monty (current)</li>
+                <li>3DS2</li>
+              </ul>
+          </div>
+        </section>
+        <section>
+          <p>GiftCard & Promo Codes issues</p>
+        </section>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true }
+        ]
+      })
+    </script>
+  </body>
 </html>
